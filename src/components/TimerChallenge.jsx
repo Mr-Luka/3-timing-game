@@ -14,7 +14,7 @@ export default function TimerChallenge({title, targetTime}){
         setTimerStarted(true); // this will execute at the same time as setInterval, however it will be instant, while interval will wait for 1 second or more to be executed
     }
 
-    function handleStop(){
+    function handleStop(){ //stops timer
         clearTimeout(timer.current)
     }
 
