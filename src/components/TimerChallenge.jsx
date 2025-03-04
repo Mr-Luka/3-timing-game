@@ -13,7 +13,7 @@ export default function TimerChallenge({title, targetTime}){
     if(remainingTime <= 0) {
         clearInterval(timer.current);
         setRemainingTime(targetTime * 1000);
-        dialog.current.showModal();
+        dialog.current.open();
     }
 
 
@@ -25,7 +25,7 @@ export default function TimerChallenge({title, targetTime}){
     }
 
     function stopTimer(){
-        dialog.current.showModal();
+        dialog.current.open();
         clearInterval(timer.current);
     }
 
