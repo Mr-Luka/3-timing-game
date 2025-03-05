@@ -8,8 +8,9 @@ function App() {
       <div id="challenges">
         <TimerChallenge title='Easy' targetTime={1}/>
         <TimerChallenge title='Not so Easy' targetTime={5}/>
-        <TimerChallenge title='Hard' targetTime={10}/>
-        <TimerChallenge title='Harder' targetTime={15}/>
+        <TimerChallenge title='Medium' targetTime={10}/>
+        <TimerChallenge title='Hard' targetTime={15}/>
+        <TimerChallenge title='Oh boy...' targetTime={23}/>
       </div>
     </>
   );
