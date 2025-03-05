@@ -27,16 +27,17 @@ export default function TimerChallenge({title, targetTime}){
     }
 
     function handleStop(){
+        dialog.current.open()
         clearInterval(timer.current)
     }
 
     return (
         <>
         <ResultModal 
-            targetTime={targetTime} 
+            targetTime={targetTime}
             ref={dialog} 
             onReset={handleReset}
-                
+            timeRemaining={timeRemaining}
             />
             <section className="challenge">
                 <h2>{title}</h2>
